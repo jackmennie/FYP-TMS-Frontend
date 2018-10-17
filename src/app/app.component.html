@@ -1,12 +1,12 @@
 <mat-grid-list cols="4" gutterSize="0" rowHeight="100px">
   <mat-grid-tile [colspan]="4" [rowspan]="1" [style.background]="'grey'"><h1>Trust Management System</h1></mat-grid-tile>
-  <mat-grid-tile [colspan]="1" [rowspan]="5" [style.background]="'LightGrey'">
+  <mat-grid-tile [colspan]="1" [rowspan]="8" [style.background]="'LightGrey'">
     <div class="nav">
       <a mat-flat-button routerLink="/">Home</a>
       <a mat-flat-button routerLink="/config">Config</a>
     </div>
   </mat-grid-tile>
-  <mat-grid-tile [colspan]="3" [rowspan]="5"><router-outlet></router-outlet></mat-grid-tile>
+  <mat-grid-tile [colspan]="3" [rowspan]="8" style="text-align: left;" class="main-content"><router-outlet></router-outlet></mat-grid-tile>
   <mat-grid-tile [colspan]="4" [rowspan]="1" [style.background]="'grey'">Ⓒ2018 Jack Mennie Final Year Project Thesis</mat-grid-tile>
   <!-- <mat-grid-tile
       *ngFor="let tile of tiles"

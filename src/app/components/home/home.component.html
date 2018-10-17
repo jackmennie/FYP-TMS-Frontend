@@ -1,3 +1,7 @@
-<p>
-  home works!
+<p *ngFor="let user of users">
+  {{user.email}}
 </p>
+
+<mat-form-field>
+    <input matInput placeholder="Name" (keydown.enter)="add(email.value); email.value=''" #email>
+</mat-form-field>
